@@ -96,6 +96,7 @@ self.addEventListener("fetch", event => {
   const requestUrl = new URL(
     event.request.url
   )
+  console.log(requestUrl.pathname)
   // on intercepte la requête et on applique la stratégie cacheFirst
   if(requestUrl.pathname.startsWith('/assets')){
     // répond au navigateur avec le résultat de la stratégie
