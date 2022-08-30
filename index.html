@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--IMPORTANT POUR LES WEB APP-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Liste des gares</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <meta name="theme-color" content="#00D1B2">
+    <link rel="stylesheet" href="main.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="192x192" href="android-icon-192x192.png">
+    <!---Safari uniquement-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-startup-image" href="android-icon-36x36.png">
+</head>
+<body>
+        <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                        <article class="message is-dark">
+                                <div class="message-header">
+                                  <p>Erreur</p>
+                                </div>
+                                <div class="message-body">
+                                  Pas de trains programmés
+                                </div>
+                              </article>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+    <header class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+              <img src="android-icon-96x96.png" alt="logo">
+            <h1 class="title">
+              Trains au départ
+            </h1>
+            <h2 class="subtitle">
+              Trains à l'heure ?
+            </h2>
+          </div>
+          <nav class="navbar is-primary">
+            <ul class="navbar-brand container">
+              <li><a href="index.html" class="navbar-item is-active">Home</a></li>
+              <li><a href="about.html" class="navbar-item">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <a class="button is-danger install hidden">Installer</a>
+    </header>
+    <main class="container">
+        <ul class="gares">
+          <!-- A dynamiser -->
+          <li class="card" data-id="id_gare">
+                                        <header class="card-header">
+                                            <h2 class="card-header-title">Charleroi</h2>
+                                            <a href="#" class="card-header-icon" aria-label="more options">
+                                                    <span class="icon">
+                                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                        </header>
+                                            <div class="card-content">
+                                                <div class="content">
+                                                    <table class="trains table is-striped">
+                                                      <tr>
+                                                        <th>Destination</th>
+                                                       <th>Départ</th>
+                                                       <th>Quai</th>
+                                                       <th>Retard</th>
+                                                     </tr>
+                                                     <tr>
+                                                       <td>Namur</td>
+                                                       <td>20:00</td>
+                                                       <td>1</td>
+                                                       <td>10 mins.</td>
+                                                     </tr>
+                                                     <tr>
+                                                       <td>Bruxelles</td>
+                                                       <td>20:12</td>
+                                                       <td>2</td>
+                                                       <td>0 mins.</td>
+                                                     </tr>
+                                                   </table>
+                                                </div>
+                                        </div>
+                                    </li>
+          <!-- end dynamique -->
+    </ul>
+    </main>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>SNCB</strong> by <a href="https://sncb.be">Steve Jobs</a>.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="main.js"></script>
+    <script src="register-sw.js"></script>
+      
+</body>
+</html>

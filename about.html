@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--IMPORTANT POUR LES WEB APP-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Liste des gares</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <meta name="theme-color" content="#00D1B2">
+    <link rel="stylesheet" href="main.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="192x192" href="android-icon-192x192.png">
+    <!---Safari uniquement-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-startup-image" href="android-icon-36x36.png">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+        .card-header {
+            cursor: pointer;
+        }
+        .is-danger {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        table.trains {
+            width: 50%;
+        }
+        table .quai {
+            text-align: center !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+              <img src="assets/PWA.webp" alt="logo">
+
+            <h1 class="title">
+             Qui sommes-nous ?
+            </h1>
+            <h2 class="subtitle">
+              Des chercheurs en PWA
+            </h2>
+          </div>
+          <nav class="navbar is-primary">
+                <ul class="navbar-brand container">
+                  <li><a href="index.html" class="navbar-item">Home</a></li>
+                  <li><a href="about.html" class="navbar-item is-active">About</a></li>
+                </ul>
+              </nav>
+        </div>
+        <a class="button is-danger install hidden">Installer</a>
+    </header>
+    <main class="container">
+        <section class="section">
+        <h1 class="title">Contactez-nous</h1>
+        <form action="">
+            <label for="name">Votre nom :</label>
+            <input type="text" id="name" name="name" class="input" required>
+            <label for="name">Votre email :</label>
+            <input type="email" id="email" name="email" class="input" required>
+            <label for="message">Votre message :</label>
+            <textarea name="message" id="message" cols="30" rows="10" class="textarea"></textarea>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox">
+                 Je donne l'autorisation d'utiliser mes données <a href="#">Voir les cnditions de vie privée</a>
+            </label>
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link">Envoyer</button>
+              </div>
+              <div class="control">
+                <button class="button is-text">Annuler</button>
+              </div>
+            </div>
+        </form>
+        </section>
+        
+        <section class="secton">
+        <h2 class="title">Pour venir</h2>
+        <div class="columns">
+              <div class="column">
+                <p>Rue G. Lemaître 21</p>
+                <p>6041 Gosselies</p>
+              </div>
+              <div class="column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.3975145563018!2d4.466528315713137!3d50.470942979478245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c22920c155cb77%3A0x122916fe7183d084!2sCentre+de+comp%C3%A9tence+Forem+Cepegra!5e0!3m2!1sfr!2sbe!4v1559621104016!5m2!1sfr!2sbe" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+        </div>
+    </section>
+        
+    </main>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>SNCB</strong> by <a href="https://sncb.be">Steve Jobs
+            </a>.
+          </p>
+        </div>
+      </footer>
+      <script src="register-sw.js"></script>
+</body>
+</html>

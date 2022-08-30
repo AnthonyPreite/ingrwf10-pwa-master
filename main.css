@@ -1,0 +1,17 @@
+ .hidden {
+            display: none;
+        }
+        .card-header {
+            cursor: pointer;
+        }
+        .is-danger {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        table.trains {
+            width: 50%;
+        }
+        table .quai {
+            text-align: center !important;
+        }

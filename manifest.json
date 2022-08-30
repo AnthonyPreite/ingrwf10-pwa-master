@@ -1,0 +1,40 @@
+{
+    "name" : "Trains au départ",
+    "short_name" : "SNCB",
+    "version": 0.1, 
+    "start_url": "/",
+    "theme_color": "#313131",
+    "background_color": "#00D1B2",
+    "display": "standalone", 
+    "description": "Une app pour les gens en galère",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src" : "android-icon-36x36.png",
+            "sizes" :"36x36",
+            "types" : "image/png"
+
+        },
+        {
+            "src" : "android-icon-96x96.png",
+            "sizes" :"96x96",
+            "types" : "image/png"
+        },
+        {
+            "src" : "android-icon-512x512.png",
+            "sizes" :"512x512",
+            "types" : "image/png"
+        },
+        {
+            "src" : "android-icon-192x192.png",
+            "sizes" :"192x192",
+            "types" : "image/png"
+        },
+        {
+            "src" : "android-icon-192x192.png",
+            "sizes" :"192x192",
+            "types" : "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
